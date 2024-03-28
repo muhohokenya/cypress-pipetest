@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    ls -la express-api/kubernetes
+                    ls -la
                      kubectl apply -f express-api/kubernetes/deployment.yaml -n filetracker
                      kubectl get pods,services -n filetracker
                     '''
