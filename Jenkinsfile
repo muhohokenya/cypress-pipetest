@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    ls -la
+                    ls -la cypress-tests
                      kubectl apply -f express-api/kubernetes/deployment.yml -n filetracker
                      kubectl get pods -n filetracker
                     '''
