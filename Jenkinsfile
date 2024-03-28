@@ -17,15 +17,6 @@ pipeline {
     }
 
     stages {
-//         stage('Git Checkout') {
-//             steps {
-//                 script {
-//                     git branch: 'master',
-//                         url: 'https://github.com/muhohokenya/cypress-pipetest.git'
-//
-//                 }
-//             }
-//         }
 
 
 
@@ -37,7 +28,7 @@ pipeline {
                     sh '''
                     ls -la express-api/kubernetes
                      kubectl apply -f express-api/kubernetes/deployment.yaml -n filetracker
-                     kubectl get pods -n filetracker
+                     kubectl get pods,services -n filetracker
                     '''
                 }
             }
