@@ -36,7 +36,7 @@ pipeline {
                 script {
                     sh '''
                     ls -la express-api/kubernetes
-                     kubectl apply -f express-api/kubernetes/deployment.yaml --namespace=filetracker
+                     kubectl apply -f express-api/kubernetes/deployment.yaml -n filetracker
                      kubectl get pods -n filetracker
                     '''
                 }
