@@ -20,7 +20,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 script {
-                    git branch: 'main',
+                    git branch: 'master',
                         url: 'https://github.com/muhohokenya/cypress-pipetest.git'
 
                 }
