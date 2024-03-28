@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-
+                   ls -la
                     kubectl get pods -n filetracker
                     '''
                 }
