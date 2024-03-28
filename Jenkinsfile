@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                   ls -la
+                     ls -la cypress-tests
                     kubectl get pods -n filetracker
                     '''
                 }
