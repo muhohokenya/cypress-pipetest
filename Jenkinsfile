@@ -17,15 +17,15 @@ pipeline {
     }
 
     stages {
-        stage('Git Checkout') {
-            steps {
-                script {
-                    git branch: 'master',
-                        url: 'https://github.com/muhohokenya/cypress-pipetest.git'
-
-                }
-            }
-        }
+//         stage('Git Checkout') {
+//             steps {
+//                 script {
+//                     git branch: 'master',
+//                         url: 'https://github.com/muhohokenya/cypress-pipetest.git'
+//
+//                 }
+//             }
+//         }
 
 
 
